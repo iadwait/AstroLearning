@@ -1,0 +1,18 @@
+---
+import CounterComponent from "../components/Counter.svelte";
+---
+
+<h1>Interactive Counter Component with Svelte</h1>
+
+<p>This is an Astro page with svelte component embedded.</p>
+
+<CounterComponent client:load />
+
+<!-- 
+| Directive                          | What it does                               |
+| ---------------------------------- | ------------------------------------------ |
+| `client:load`                      | Load component immediately when page loads |
+| `client:idle`                      | Load when browser is idle                  |
+| `client:visible`                   | Load when component enters viewport        |
+| `client:media="(min-width:768px)"` | Load only on specific media queries        |
+-->
