@@ -1,16 +1,28 @@
 ---
-
+const title = "My First Astro Page";
+const description = "Learning Astro Componenets and Frontmatter";
 ---
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<!-- meta is optional but recommended for SEO -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>{title}</h1>
+		<p>{description}</p>
+		<!-- We can add components here -->
 	</body>
+	<style>
+		h1 {
+			color: blue;
+			font-family: 'Times New Roman', Times, serif;
+		}
+		p {
+			color: gray;
+			font-size: 18px;
+		}
+	</style>
 </html>
