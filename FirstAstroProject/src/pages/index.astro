@@ -1,4 +1,5 @@
 ---
+import Card from "../components/Card.astro";
 const title = "My First Astro Page";
 const description = "Learning Astro Componenets and Frontmatter";
 ---
@@ -14,6 +15,8 @@ const description = "Learning Astro Componenets and Frontmatter";
 		<h1>{title}</h1>
 		<p>{description}</p>
 		<!-- We can add components here -->
+		 <Card title="Card 1" content="This is my card 1" />
+		 <Card title="Card 2" content="This is my card 2" />
 	</body>
 	<style>
 		h1 {
